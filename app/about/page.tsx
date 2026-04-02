@@ -1,0 +1,183 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import AnimatedSection from '@/components/AnimatedSection'
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'Not just a coach. Not just a developer. A Systems Architect for human performance and business.',
+}
+
+export default function About() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="container-narrow">
+          <AnimatedSection>
+            <p className="label-caps mb-4">About</p>
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <h1 className="heading-display text-4xl md:text-6xl mb-8">
+              Not just a coach.<br />
+              Not just a developer.<br />
+              <span className="italic text-gold">A Systems Architect.</span>
+            </h1>
+          </AnimatedSection>
+          <AnimatedSection delay={200}>
+            <div className="max-w-2xl">
+              <p className="font-inter text-lg text-brown/70 leading-relaxed mb-6">
+                I&apos;m Lola — entrepreneur, systems thinker, and builder. I
+                help people go from scattered ideas to scalable businesses
+                through structured, intelligent systems.
+              </p>
+              <p className="font-inter text-lg text-brown/70 leading-relaxed mb-6">
+                My background spans health &amp; wellness, longevity, and
+                high-performance coaching. I&apos;ve seen firsthand how the
+                right systems transform not just businesses — but lives.
+              </p>
+              <p className="font-inter text-lg text-brown/70 leading-relaxed">
+                I believe in building with intention. Every funnel, every
+                automation, every system I create is designed to work{' '}
+                <em>for you</em> — so you can focus on what you do best.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Photo Placeholder */}
+      <section className="pb-20">
+        <div className="container-narrow">
+          <AnimatedSection>
+            <div className="aspect-[16/9] md:aspect-[21/9] bg-clay/30 rounded-2xl flex items-center justify-center border border-clay/50">
+              <p className="font-inter text-sm text-brown/30">
+                [ Your photo here ]
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="section-padding bg-section-clay">
+        <div className="container-wide">
+          <AnimatedSection>
+            <p className="label-caps mb-4">What I Stand For</p>
+            <h2 className="heading-display text-3xl md:text-4xl mb-16">
+              The principles behind the systems.
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Clarity Over Complexity',
+                desc: 'Simple systems that actually work beat complicated ones that collect dust. I build what you need — nothing more, nothing less.',
+              },
+              {
+                title: 'Structure Meets Flow',
+                desc: 'Business should feel powerful and aligned. The right systems create space for creativity, not stress.',
+              },
+              {
+                title: 'Results, Not Theory',
+                desc: 'Everything I build is designed to convert, to save time, to make money. No fluff. No busywork. Real outcomes.',
+              },
+              {
+                title: 'Feminine Intelligence',
+                desc: 'Intuition and data aren\'t opposites. I combine strategic thinking with deep understanding of how people actually work.',
+              },
+              {
+                title: 'Ownership',
+                desc: 'Your business should work for you, not the other way around. I build systems that give you back your time and control.',
+              },
+              {
+                title: 'Excellence, Not Burnout',
+                desc: 'High performance doesn\'t mean grinding 24/7. Smart systems let you operate at your best without burning out.',
+              },
+            ].map((val, i) => (
+              <AnimatedSection key={i} delay={i * 80}>
+                <div className="card-base hover-lift h-full">
+                  <h3 className="font-playfair text-lg font-semibold mb-3">
+                    {val.title}
+                  </h3>
+                  <p className="font-inter text-sm text-brown/60 leading-relaxed">
+                    {val.desc}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Edge */}
+      <section className="section-padding">
+        <div className="container-narrow text-center">
+          <AnimatedSection>
+            <p className="label-caps mb-4">My Unique Edge</p>
+            <h2 className="heading-display text-3xl md:text-5xl mb-8">
+              Where strategy meets <span className="italic text-gold">execution.</span>
+            </h2>
+            <p className="font-inter text-lg text-brown/60 max-w-2xl mx-auto leading-relaxed mb-12">
+              Most coaches can&apos;t build. Most developers can&apos;t
+              strategize. Most marketers can&apos;t do either. I do all three —
+              which means your system isn&apos;t just built, it&apos;s built
+              <em> right</em>.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={100}>
+            <div className="grid grid-cols-3 gap-4">
+              {[
+                { label: 'Strategy', icon: '🧠' },
+                { label: 'Design', icon: '✨' },
+                { label: 'Technology', icon: '⚡' },
+              ].map((skill, i) => (
+                <div
+                  key={i}
+                  className="card-base p-6 text-center hover-lift"
+                >
+                  <span className="text-3xl mb-3 block">{skill.icon}</span>
+                  <p className="font-inter text-sm font-medium">{skill.label}</p>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Connect */}
+      <section className="section-padding bg-section-dark text-ivory">
+        <div className="container-narrow text-center">
+          <AnimatedSection>
+            <p className="label-caps text-gold/80 mb-4">Let&apos;s Connect</p>
+            <h2 className="font-playfair font-bold text-3xl md:text-5xl text-ivory mb-6">
+              Follow the journey.
+            </h2>
+            <p className="font-inter text-lg text-ivory/50 max-w-xl mx-auto mb-8">
+              I share insights on longevity, business systems, and building a
+              life on your terms.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.instagram.com/lola.longevity"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-gold text-brown font-inter font-semibold px-8 py-4 rounded-full hover:bg-ivory transition-all duration-300"
+              >
+                @lola.longevity on Instagram →
+              </a>
+              <Link
+                href="/book"
+                className="inline-flex items-center justify-center gap-2 border border-ivory/30 text-ivory font-inter font-medium px-8 py-4 rounded-full hover:bg-ivory/10 transition-all duration-300"
+              >
+                Book a Call
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  )
+}

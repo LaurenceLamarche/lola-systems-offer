@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #F6F1EB;
+  --clay: #D8CFC4;
+  --rose: #C6A9A3;
+  --brown: #3E332F;
+  --gold: #C9A46A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--brown);
+}
+
+/* Fade-up animation for scroll reveals */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+.reveal-delay-500 { transition-delay: 500ms; }
+
+/* Gold divider */
+.gold-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+/* Typography helpers */
+@layer components {
+  .heading-display {
+    @apply font-playfair font-bold tracking-tight text-brown;
+  }
+
+  .label-caps {
+    @apply font-inter text-xs uppercase tracking-[0.2em] text-rose;
+  }
+
+  .btn-primary {
+    @apply bg-gold text-brown font-inter font-semibold px-8 py-4 rounded-full
+           hover:bg-brown hover:text-ivory transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2
+           focus:ring-offset-ivory inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply border border-brown text-brown font-inter font-medium px-8 py-4 rounded-full
+           hover:bg-brown hover:text-ivory transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2
+           focus:ring-offset-ivory inline-flex items-center gap-2;
+  }
+
+  .btn-ghost {
+    @apply text-gold font-inter font-medium underline underline-offset-4
+           hover:text-brown transition-colors duration-200
+           focus:outline-none inline-flex items-center gap-1;
+  }
+
+  .card-base {
+    @apply bg-white/60 backdrop-blur-sm border border-clay/50 rounded-2xl p-6
+           hover:border-rose/70 transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-6;
+  }
+}
+
+/* Decorative gold line accent */
+.gold-accent::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+/* Smooth hover lift */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(62, 51, 47, 0.1);
+}
+
+/* Section background variants */
+.bg-section-dark {
+  background-color: var(--brown);
+}
+
+.bg-section-clay {
+  background-color: #EEE9E3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clay);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rose);
+}
+
+/* FAQ accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
