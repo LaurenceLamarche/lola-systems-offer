@@ -12,7 +12,7 @@ export default function Home() {
             <p className="label-caps mb-6">Turn Chaos Into Clients</p>
           </AnimatedSection>
           <AnimatedSection delay={100}>
-            <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-6">
+            <h1 className="heading-display text-3xl md:text-5xl lg:text-5xl leading-[1.1] mb-6">
               Stop doing everything manually.<br />
               <span className="text-teal italic">Start booking clients consistently.</span>
             </h1>
