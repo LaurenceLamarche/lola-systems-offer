@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/foundation-os', label: 'Foundation OS' },
-  { href: '/ascension', label: 'Ascension' },
+  { href: '/60-day-revenue-system', label: '60-Day System' },
   { href: '/about', label: 'About' },
 ]
 
@@ -39,10 +39,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-none group">
           <span className="font-playfair text-lg font-bold text-charcoal tracking-tight group-hover:text-teal transition-colors duration-300">
-            Lola
+            Aligned Systems
           </span>
           <span className="label-caps text-[10px] tracking-[0.22em]">
-            Systems Architect
+            Turn your business into a system
           </span>
         </Link>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/book"
-            className={`font-inter text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 ${
+            className={`font-inter text-sm font-semibold px-5 py-2.5 rounded-[10px] transition-all duration-300 ${
               pathname === '/book'
                 ? 'bg-teal text-cream'
                 : 'bg-charcoal text-cream hover:bg-teal hover:text-cream'

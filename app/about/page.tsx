@@ -27,18 +27,18 @@ export default function About() {
           <AnimatedSection delay={200}>
             <div className="max-w-2xl">
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
-                I&apos;m Lola — entrepreneur, systems thinker, and builder. I
+                We&apos;re Aligned Systems — a team of systems thinkers and builders. We
                 help people go from scattered ideas to scalable businesses
                 through structured, intelligent systems.
               </p>
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
-                My background spans health &amp; wellness, longevity, and
-                high-performance coaching. I&apos;ve seen firsthand how the
+                Our background spans health &amp; wellness, longevity, and
+                high-performance coaching. We&apos;ve seen firsthand how the
                 right systems transform not just businesses — but lives.
               </p>
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed">
-                I believe in building with intention. Every funnel, every
-                automation, every system I create is designed to work{' '}
+                We believe in building with intention. Every funnel, every
+                automation, every system we create is designed to work{' '}
                 <em>for you</em> — so you can focus on what you do best.
               </p>
             </div>
@@ -63,7 +63,7 @@ export default function About() {
       <section className="section-padding bg-section-clay">
         <div className="container-wide">
           <AnimatedSection>
-            <p className="label-caps mb-4">What I Stand For</p>
+            <p className="label-caps mb-4">What We Stand For</p>
             <h2 className="heading-display text-3xl md:text-4xl mb-16">
               The principles behind the systems.
             </h2>
@@ -73,7 +73,7 @@ export default function About() {
             {[
               {
                 title: 'Clarity Over Complexity',
-                desc: 'Simple systems that actually work beat complicated ones that collect dust. I build what you need — nothing more, nothing less.',
+                desc: 'Simple systems that actually work beat complicated ones that collect dust. We build what you need — nothing more, nothing less.',
               },
               {
                 title: 'Structure Meets Flow',
@@ -81,15 +81,15 @@ export default function About() {
               },
               {
                 title: 'Results, Not Theory',
-                desc: 'Everything I build is designed to convert, to save time, to make money. No fluff. No busywork. Real outcomes.',
+                desc: 'Everything we build is designed to convert, to save time, to make money. No fluff. No busywork. Real outcomes.',
               },
               {
                 title: 'Feminine Intelligence',
-                desc: 'Intuition and data aren\'t opposites. I combine strategic thinking with deep understanding of how people actually work.',
+                desc: 'Intuition and data aren\'t opposites. We combine strategic thinking with deep understanding of how people actually work.',
               },
               {
                 title: 'Ownership',
-                desc: 'Your business should work for you, not the other way around. I build systems that give you back your time and control.',
+                desc: 'Your business should work for you, not the other way around. We build systems that give you back your time and control.',
               },
               {
                 title: 'Excellence, Not Burnout',
@@ -115,13 +115,13 @@ export default function About() {
       <section className="section-padding">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="label-caps mb-4">My Unique Edge</p>
+            <p className="label-caps mb-4">Our Unique Edge</p>
             <h2 className="heading-display text-3xl md:text-5xl mb-8">
               Where strategy meets <span className="italic text-teal">execution.</span>
             </h2>
             <p className="font-inter text-lg text-charcoal/60 max-w-2xl mx-auto leading-relaxed mb-12">
               Most coaches can&apos;t build. Most developers can&apos;t
-              strategize. Most marketers can&apos;t do either. I do all three —
+              strategize. Most marketers can&apos;t do either. We do all three —
               which means your system isn&apos;t just built, it&apos;s built
               <em> right</em>.
             </p>
@@ -156,7 +156,7 @@ export default function About() {
               Follow the journey.
             </h2>
             <p className="font-inter text-lg text-cream/50 max-w-xl mx-auto mb-8">
-              I share insights on longevity, business systems, and building a
+              We share insights on longevity, business systems, and building a
               life on your terms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

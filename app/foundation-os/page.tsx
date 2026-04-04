@@ -320,7 +320,7 @@ export default function FoundationOS() {
               },
               {
                 q: 'Do I need technical skills?',
-                a: 'Zero. Whether you choose "Done With You" or "Done For You," I handle all the technical setup. You focus on your zone of genius — I handle the systems.',
+                a: 'Zero. Whether you choose "Done With You" or "Done For You," we handle all the technical setup. You focus on your zone of genius — we handle the systems.',
               },
               {
                 q: 'What platform do you build on?',

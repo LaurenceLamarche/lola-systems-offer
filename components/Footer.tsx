@@ -3,7 +3,7 @@ import Link from 'next/link'
 const footerLinks = [
   { href: '/', label: 'Home' },
   { href: '/foundation-os', label: 'Foundation OS' },
-  { href: '/ascension', label: 'Ascension' },
+  { href: '/60-day-revenue-system', label: '60-Day System' },
   { href: '/about', label: 'About' },
   { href: '/book', label: 'Book a Call' },
 ]
@@ -18,15 +18,14 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <span className="font-playfair text-2xl font-bold text-cream">
-                Lola
+                Aligned Systems
               </span>
             </Link>
             <p className="label-caps text-sage/80 text-[10px] tracking-[0.22em] mb-4">
-              Systems Architect
+              Turn your business into a system
             </p>
             <p className="font-inter text-sm text-cream/60 leading-relaxed max-w-xs">
-              I build simple systems for beginners — and powerful machines for
-              those ready to scale.
+              We help coaches and service-based business owners turn their chaos into a simple, scalable system that consistently brings in clients without doing everything manually.
             </p>
             <div className="mt-6">
               <a
@@ -85,17 +84,17 @@ export default function Footer() {
             </p>
             <Link
               href="/book"
-              className="inline-flex items-center gap-2 bg-teal text-cream font-inter font-semibold text-sm px-6 py-3 rounded-full hover:bg-cream hover:text-charcoal transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-teal text-cream font-inter font-semibold text-sm px-6 py-3 rounded-[10px] hover:bg-cream hover:text-charcoal transition-all duration-300"
             >
               Book Your Foundation Call
               <span>→</span>
             </Link>
             <div className="mt-8 pt-8 border-t border-cream/10">
               <p className="label-caps text-[10px] tracking-[0.18em] text-sage/60 mb-2">
-                The Positioning
+                The Promise
               </p>
               <p className="font-playfair italic text-cream/40 text-sm leading-relaxed">
-                &ldquo;Align. Activate. Ascend — in your business.&rdquo;
+                &ldquo;We help coaches and service-based business owners turn their chaos into a simple, scalable system that consistently brings in clients without doing everything manually.&rdquo;
               </p>
             </div>
           </div>
