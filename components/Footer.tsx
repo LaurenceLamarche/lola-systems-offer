@@ -10,21 +10,21 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brown text-ivory">
+    <footer className="bg-charcoal text-cream">
       <div className="max-w-7xl mx-auto px-6">
         {/* Main footer */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand column */}
           <div className="md:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <span className="font-playfair text-2xl font-bold text-ivory">
+              <span className="font-playfair text-2xl font-bold text-cream">
                 Lola
               </span>
             </Link>
-            <p className="label-caps text-rose/80 text-[10px] tracking-[0.22em] mb-4">
+            <p className="label-caps text-sage/80 text-[10px] tracking-[0.22em] mb-4">
               Systems Architect
             </p>
-            <p className="font-inter text-sm text-ivory/60 leading-relaxed max-w-xs">
+            <p className="font-inter text-sm text-cream/60 leading-relaxed max-w-xs">
               I build simple systems for beginners — and powerful machines for
               those ready to scale.
             </p>
@@ -33,7 +33,7 @@ export default function Footer() {
                 href="https://www.instagram.com/lola.longevity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-inter text-rose hover:text-gold transition-colors duration-200 group"
+                className="inline-flex items-center gap-2 text-sm font-inter text-sage hover:text-teal transition-colors duration-200 group"
               >
                 <svg
                   className="w-4 h-4"
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Navigation column */}
           <div>
-            <h3 className="label-caps text-[10px] tracking-[0.22em] text-rose/80 mb-5">
+            <h3 className="label-caps text-[10px] tracking-[0.22em] text-sage/80 mb-5">
               Navigation
             </h3>
             <ul className="flex flex-col gap-3">
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-inter text-sm text-ivory/60 hover:text-gold transition-colors duration-200"
+                    className="font-inter text-sm text-cream/60 hover:text-teal transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -76,25 +76,25 @@ export default function Footer() {
 
           {/* CTA column */}
           <div>
-            <h3 className="label-caps text-[10px] tracking-[0.22em] text-rose/80 mb-5">
+            <h3 className="label-caps text-[10px] tracking-[0.22em] text-sage/80 mb-5">
               Ready to Build?
             </h3>
-            <p className="font-inter text-sm text-ivory/60 leading-relaxed mb-6">
+            <p className="font-inter text-sm text-cream/60 leading-relaxed mb-6">
               From first client to fully automated business. Let&apos;s build
               your system together.
             </p>
             <Link
               href="/book"
-              className="inline-flex items-center gap-2 bg-gold text-brown font-inter font-semibold text-sm px-6 py-3 rounded-full hover:bg-ivory hover:text-brown transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-teal text-cream font-inter font-semibold text-sm px-6 py-3 rounded-full hover:bg-cream hover:text-charcoal transition-all duration-300"
             >
               Book Your Foundation Call
               <span>→</span>
             </Link>
-            <div className="mt-8 pt-8 border-t border-ivory/10">
-              <p className="label-caps text-[10px] tracking-[0.18em] text-rose/60 mb-2">
+            <div className="mt-8 pt-8 border-t border-cream/10">
+              <p className="label-caps text-[10px] tracking-[0.18em] text-sage/60 mb-2">
                 The Positioning
               </p>
-              <p className="font-playfair italic text-ivory/40 text-sm leading-relaxed">
+              <p className="font-playfair italic text-cream/40 text-sm leading-relaxed">
                 &ldquo;Align. Activate. Ascend — in your business.&rdquo;
               </p>
             </div>
@@ -102,11 +102,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-ivory/10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-inter text-xs text-ivory/30">
+        <div className="border-t border-cream/10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-inter text-xs text-cream/30">
             © {new Date().getFullYear()} Lola Systems. All rights reserved.
           </p>
-          <p className="font-inter text-xs text-ivory/30 text-center max-w-md">
+          <p className="font-inter text-xs text-cream/30 text-center max-w-md">
             Results vary. Foundation OS is a business systems service, not a
             guaranteed income program. Individual results depend on effort,
             industry, and market conditions.

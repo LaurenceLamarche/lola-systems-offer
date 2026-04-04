@@ -31,14 +31,14 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-ivory/96 backdrop-blur-md shadow-[0_1px_0_rgba(62,51,47,0.06)]'
+          ? 'bg-cream/96 backdrop-blur-md shadow-[0_1px_0_rgba(44,44,44,0.06)]'
           : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-none group">
-          <span className="font-playfair text-lg font-bold text-brown tracking-tight group-hover:text-gold transition-colors duration-300">
+          <span className="font-playfair text-lg font-bold text-charcoal tracking-tight group-hover:text-teal transition-colors duration-300">
             Lola
           </span>
           <span className="label-caps text-[10px] tracking-[0.22em]">
@@ -54,13 +54,13 @@ export default function Navbar() {
               href={link.href}
               className={`font-inter text-sm transition-colors duration-200 relative group ${
                 pathname === link.href
-                  ? 'text-gold'
-                  : 'text-brown/60 hover:text-brown'
+                  ? 'text-teal'
+                  : 'text-charcoal/60 hover:text-charcoal'
               }`}
             >
               {link.label}
               <span
-                className={`absolute -bottom-0.5 left-0 h-px bg-gold transition-all duration-300 ${
+                className={`absolute -bottom-0.5 left-0 h-px bg-teal transition-all duration-300 ${
                   pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -70,8 +70,8 @@ export default function Navbar() {
             href="/book"
             className={`font-inter text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 ${
               pathname === '/book'
-                ? 'bg-gold text-brown'
-                : 'bg-brown text-ivory hover:bg-gold hover:text-brown'
+                ? 'bg-teal text-cream'
+                : 'bg-charcoal text-cream hover:bg-teal hover:text-cream'
             }`}
           >
             Book a Call
@@ -86,17 +86,17 @@ export default function Navbar() {
           aria-expanded={isOpen}
         >
           <span
-            className={`block w-6 h-px bg-brown transition-all duration-300 origin-center ${
+            className={`block w-6 h-px bg-charcoal transition-all duration-300 origin-center ${
               isOpen ? 'rotate-45 translate-y-[3px]' : ''
             }`}
           />
           <span
-            className={`block w-6 h-px bg-brown transition-all duration-300 ${
+            className={`block w-6 h-px bg-charcoal transition-all duration-300 ${
               isOpen ? 'opacity-0 scale-x-0' : ''
             }`}
           />
           <span
-            className={`block w-6 h-px bg-brown transition-all duration-300 origin-center ${
+            className={`block w-6 h-px bg-charcoal transition-all duration-300 origin-center ${
               isOpen ? '-rotate-45 -translate-y-[3px]' : ''
             }`}
           />
@@ -109,20 +109,20 @@ export default function Navbar() {
           isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-ivory border-t border-clay/40 px-6 pt-4 pb-8 flex flex-col gap-1">
+        <div className="bg-cream border-t border-sage/40 px-6 pt-4 pb-8 flex flex-col gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`font-inter text-base py-3 border-b border-clay/30 flex items-center justify-between transition-colors duration-200 ${
+              className={`font-inter text-base py-3 border-b border-sage/30 flex items-center justify-between transition-colors duration-200 ${
                 pathname === link.href
-                  ? 'text-gold font-medium'
-                  : 'text-brown/80 hover:text-brown'
+                  ? 'text-teal font-medium'
+                  : 'text-charcoal/80 hover:text-charcoal'
               }`}
             >
               {link.label}
               {pathname === link.href && (
-                <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+                <span className="w-1.5 h-1.5 rounded-full bg-teal" />
               )}
             </Link>
           ))}

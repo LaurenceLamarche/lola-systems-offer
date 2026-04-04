@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --ivory: #F6F1EB;
-  --clay: #D8CFC4;
-  --rose: #C6A9A3;
-  --brown: #3E332F;
-  --gold: #C9A46A;
+  /* Aligned Systems Brand Colors */
+  --teal: #1B7F8C;
+  --charcoal: #2C2C2C;
+  --cream: #F9F7F4;
+  --sage: #8BA888;
+  --sand: #D4B896;
 }
 
 * {
@@ -21,8 +22,8 @@ html {
 }
 
 body {
-  background-color: var(--ivory);
-  color: var(--brown);
+  background-color: var(--cream);
+  color: var(--charcoal);
 }
 
 /* Fade-up animation for scroll reveals */
@@ -44,46 +45,46 @@ body {
 .reveal-delay-400 { transition-delay: 400ms; }
 .reveal-delay-500 { transition-delay: 500ms; }
 
-/* Gold divider */
+/* Teal divider */
 .gold-rule {
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--teal), transparent);
 }
 
 /* Typography helpers */
 @layer components {
   .heading-display {
-    @apply font-playfair font-bold tracking-tight text-brown;
+    @apply font-playfair font-bold tracking-tight text-charcoal;
   }
 
   .label-caps {
-    @apply font-inter text-xs uppercase tracking-[0.2em] text-rose;
+    @apply font-inter text-xs uppercase tracking-[0.2em] text-sage;
   }
 
   .btn-primary {
-    @apply bg-gold text-brown font-inter font-semibold px-8 py-4 rounded-full
-           hover:bg-brown hover:text-ivory transition-all duration-300
-           focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2
-           focus:ring-offset-ivory inline-flex items-center gap-2;
+    @apply bg-teal text-cream font-inter font-semibold px-8 py-4 rounded-full
+           hover:bg-charcoal hover:text-cream transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2
+           focus:ring-offset-cream inline-flex items-center gap-2;
   }
 
   .btn-secondary {
-    @apply border border-brown text-brown font-inter font-medium px-8 py-4 rounded-full
-           hover:bg-brown hover:text-ivory transition-all duration-300
-           focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2
-           focus:ring-offset-ivory inline-flex items-center gap-2;
+    @apply border border-charcoal text-charcoal font-inter font-medium px-8 py-4 rounded-full
+           hover:bg-charcoal hover:text-cream transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2
+           focus:ring-offset-cream inline-flex items-center gap-2;
   }
 
   .btn-ghost {
-    @apply text-gold font-inter font-medium underline underline-offset-4
-           hover:text-brown transition-colors duration-200
+    @apply text-teal font-inter font-medium underline underline-offset-4
+           hover:text-charcoal transition-colors duration-200
            focus:outline-none inline-flex items-center gap-1;
   }
 
   .card-base {
-    @apply bg-white/60 backdrop-blur-sm border border-clay/50 rounded-2xl p-6
-           hover:border-rose/70 transition-all duration-300;
+    @apply bg-white/60 backdrop-blur-sm border border-sage/30 rounded-2xl p-6
+           hover:border-teal/50 transition-all duration-300;
   }
 
   .section-padding {
@@ -99,13 +100,13 @@ body {
   }
 }
 
-/* Decorative gold line accent */
+/* Decorative teal line accent */
 .gold-accent::before {
   content: '';
   display: block;
   width: 40px;
   height: 2px;
-  background: var(--gold);
+  background: var(--teal);
   margin-bottom: 1.25rem;
 }
 
@@ -121,11 +122,11 @@ body {
 
 /* Section background variants */
 .bg-section-dark {
-  background-color: var(--brown);
+  background-color: var(--charcoal);
 }
 
 .bg-section-clay {
-  background-color: #EEE9E3;
+  background-color: #F5F3F0;
 }
 
 /* Custom scrollbar */
@@ -134,16 +135,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--ivory);
+  background: var(--cream);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clay);
+  background: var(--sage);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--rose);
+  background: var(--teal);
 }
 
 /* FAQ accordion */

@@ -19,11 +19,11 @@ export default function FoundationOS() {
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-6xl mb-6">
-              Foundation <span className="italic text-gold">OS</span>
+              Foundation <span className="italic text-teal">OS</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={200}>
-            <p className="font-inter text-lg md:text-xl text-brown/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
               Your first revenue system — built to convert. Everything you need
               to go from scattered ideas to signed clients.
             </p>
@@ -79,12 +79,12 @@ export default function FoundationOS() {
                 <div
                   className={`rounded-2xl p-8 md:p-10 flex flex-col md:flex-row gap-6 ${
                     item.highlight
-                      ? 'bg-white border-2 border-gold/30'
+                      ? 'bg-white border-2 border-teal/30'
                       : 'card-base'
                   }`}
                 >
                   <div className="flex-shrink-0">
-                    <span className="font-playfair text-4xl font-bold text-gold/30">
+                    <span className="font-playfair text-4xl font-bold text-teal/30">
                       {item.num}
                     </span>
                   </div>
@@ -92,12 +92,12 @@ export default function FoundationOS() {
                     <h3 className="font-playfair text-xl font-semibold mb-3">
                       {item.title}
                       {item.highlight && (
-                        <span className="ml-3 text-xs bg-gold/10 text-gold px-3 py-1 rounded-full font-inter font-medium">
+                        <span className="ml-3 text-xs bg-teal/10 text-teal px-3 py-1 rounded-full font-inter font-medium">
                           High Value
                         </span>
                       )}
                     </h3>
-                    <p className="font-inter text-brown/60 leading-relaxed">
+                    <p className="font-inter text-charcoal/60 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -114,7 +114,7 @@ export default function FoundationOS() {
           <AnimatedSection>
             <p className="label-caps text-center mb-4">The Method</p>
             <h2 className="heading-display text-3xl md:text-4xl text-center mb-16">
-              Assess. Align. <span className="italic text-gold">Activate.</span>
+              Assess. Align. <span className="italic text-teal">Activate.</span>
             </h2>
           </AnimatedSection>
 
@@ -141,21 +141,21 @@ export default function FoundationOS() {
             ].map((step, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="flex gap-6 md:gap-10 items-start">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center text-2xl">
+                  <div className="flex-shrink-0 w-16 h-16 bg-teal/10 rounded-2xl flex items-center justify-center text-2xl">
                     {step.icon}
                   </div>
                   <div>
-                    <p className="label-caps text-gold mb-2">{step.phase}</p>
+                    <p className="label-caps text-teal mb-2">{step.phase}</p>
                     <h3 className="font-playfair text-2xl font-semibold mb-3">
                       {step.title}
                     </h3>
-                    <p className="font-inter text-brown/60 leading-relaxed max-w-xl">
+                    <p className="font-inter text-charcoal/60 leading-relaxed max-w-xl">
                       {step.desc}
                     </p>
                   </div>
                 </div>
                 {i < 2 && (
-                  <div className="ml-8 h-12 border-l-2 border-dashed border-gold/20" />
+                  <div className="ml-8 h-12 border-l-2 border-dashed border-teal/20" />
                 )}
               </AnimatedSection>
             ))}
@@ -164,14 +164,14 @@ export default function FoundationOS() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-section-dark text-ivory">
+      <section className="py-16 bg-section-dark text-cream">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="label-caps text-gold/80 mb-4">Timeline</p>
-            <h2 className="font-playfair font-bold text-4xl md:text-5xl text-ivory mb-4">
+            <p className="label-caps text-teal/80 mb-4">Timeline</p>
+            <h2 className="font-playfair font-bold text-4xl md:text-5xl text-cream mb-4">
               7–14 days.
             </h2>
-            <p className="font-inter text-lg text-ivory/50">
+            <p className="font-inter text-lg text-cream/50">
               Built and launched. Start signing clients.
             </p>
           </AnimatedSection>
@@ -237,39 +237,39 @@ export default function FoundationOS() {
                 <div
                   className={`rounded-2xl p-8 h-full flex flex-col ${
                     plan.featured
-                      ? 'bg-brown text-ivory border-2 border-gold/30 relative'
+                      ? 'bg-charcoal text-cream border-2 border-teal/30 relative'
                       : 'card-base'
                   }`}
                 >
                   {plan.featured && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-brown text-xs font-inter font-semibold px-4 py-1 rounded-full">
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal text-charcoal text-xs font-inter font-semibold px-4 py-1 rounded-full">
                       Most Popular
                     </span>
                   )}
                   <p
                     className={`label-caps mb-2 ${
-                      plan.featured ? 'text-gold' : ''
+                      plan.featured ? 'text-teal' : ''
                     }`}
                   >
                     {plan.tier}
                   </p>
                   <p
                     className={`font-playfair text-3xl font-bold mb-3 ${
-                      plan.featured ? 'text-ivory' : 'text-brown'
+                      plan.featured ? 'text-cream' : 'text-charcoal'
                     }`}
                   >
                     {plan.price}
                   </p>
                   <p
                     className={`font-inter text-sm mb-6 ${
-                      plan.featured ? 'text-ivory/60' : 'text-brown/60'
+                      plan.featured ? 'text-cream/60' : 'text-charcoal/60'
                     }`}
                   >
                     {plan.desc}
                   </p>
                   <hr
                     className={`mb-6 ${
-                      plan.featured ? 'border-ivory/10' : 'border-clay/50'
+                      plan.featured ? 'border-cream/10' : 'border-sage/50'
                     }`}
                   />
                   <ul className="space-y-3 mb-8 flex-grow">
@@ -277,10 +277,10 @@ export default function FoundationOS() {
                       <li
                         key={j}
                         className={`font-inter text-sm flex items-center gap-3 ${
-                          plan.featured ? 'text-ivory/70' : 'text-brown/60'
+                          plan.featured ? 'text-cream/70' : 'text-charcoal/60'
                         }`}
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-teal flex-shrink-0" />
                         {f}
                       </li>
                     ))}
@@ -289,8 +289,8 @@ export default function FoundationOS() {
                     href="/book"
                     className={`text-center font-inter font-semibold px-6 py-3.5 rounded-full transition-all duration-300 ${
                       plan.featured
-                        ? 'bg-gold text-brown hover:bg-ivory'
-                        : 'bg-brown text-ivory hover:bg-gold hover:text-brown'
+                        ? 'bg-teal text-charcoal hover:bg-cream'
+                        : 'bg-charcoal text-cream hover:bg-teal hover:text-charcoal'
                     }`}
                   >
                     {plan.cta}
@@ -338,15 +338,15 @@ export default function FoundationOS() {
               <AnimatedSection key={i} delay={i * 60}>
                 <details className="card-base group">
                   <summary className="flex items-center justify-between cursor-pointer p-6">
-                    <span className="font-inter font-medium text-brown pr-4">
+                    <span className="font-inter font-medium text-charcoal pr-4">
                       {item.q}
                     </span>
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center text-gold text-sm transition-transform duration-300 group-open:rotate-45">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal/10 flex items-center justify-center text-teal text-sm transition-transform duration-300 group-open:rotate-45">
                       +
                     </span>
                   </summary>
                   <div className="px-6 pb-6 -mt-2">
-                    <p className="font-inter text-sm text-brown/60 leading-relaxed">
+                    <p className="font-inter text-sm text-charcoal/60 leading-relaxed">
                       {item.a}
                     </p>
                   </div>
@@ -363,9 +363,9 @@ export default function FoundationOS() {
           <AnimatedSection>
             <h2 className="heading-display text-3xl md:text-5xl mb-6">
               Your first system.<br />
-              <span className="italic text-gold">Built in days, not months.</span>
+              <span className="italic text-teal">Built in days, not months.</span>
             </h2>
-            <p className="font-inter text-lg text-brown/60 max-w-xl mx-auto mb-10">
+            <p className="font-inter text-lg text-charcoal/60 max-w-xl mx-auto mb-10">
               Stop overthinking. Start building. Book your Foundation Call and
               let&apos;s get your business running.
             </p>

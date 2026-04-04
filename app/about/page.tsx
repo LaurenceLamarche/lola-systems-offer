@@ -21,22 +21,22 @@ export default function About() {
             <h1 className="heading-display text-4xl md:text-6xl mb-8">
               Not just a coach.<br />
               Not just a developer.<br />
-              <span className="italic text-gold">A Systems Architect.</span>
+              <span className="italic text-teal">A Systems Architect.</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <div className="max-w-2xl">
-              <p className="font-inter text-lg text-brown/70 leading-relaxed mb-6">
+              <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
                 I&apos;m Lola — entrepreneur, systems thinker, and builder. I
                 help people go from scattered ideas to scalable businesses
                 through structured, intelligent systems.
               </p>
-              <p className="font-inter text-lg text-brown/70 leading-relaxed mb-6">
+              <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
                 My background spans health &amp; wellness, longevity, and
                 high-performance coaching. I&apos;ve seen firsthand how the
                 right systems transform not just businesses — but lives.
               </p>
-              <p className="font-inter text-lg text-brown/70 leading-relaxed">
+              <p className="font-inter text-lg text-charcoal/70 leading-relaxed">
                 I believe in building with intention. Every funnel, every
                 automation, every system I create is designed to work{' '}
                 <em>for you</em> — so you can focus on what you do best.
@@ -50,8 +50,8 @@ export default function About() {
       <section className="pb-20">
         <div className="container-narrow">
           <AnimatedSection>
-            <div className="aspect-[16/9] md:aspect-[21/9] bg-clay/30 rounded-2xl flex items-center justify-center border border-clay/50">
-              <p className="font-inter text-sm text-brown/30">
+            <div className="aspect-[16/9] md:aspect-[21/9] bg-sage/30 rounded-2xl flex items-center justify-center border border-sage/50">
+              <p className="font-inter text-sm text-charcoal/30">
                 [ Your photo here ]
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function About() {
                   <h3 className="font-playfair text-lg font-semibold mb-3">
                     {val.title}
                   </h3>
-                  <p className="font-inter text-sm text-brown/60 leading-relaxed">
+                  <p className="font-inter text-sm text-charcoal/60 leading-relaxed">
                     {val.desc}
                   </p>
                 </div>
@@ -117,9 +117,9 @@ export default function About() {
           <AnimatedSection>
             <p className="label-caps mb-4">My Unique Edge</p>
             <h2 className="heading-display text-3xl md:text-5xl mb-8">
-              Where strategy meets <span className="italic text-gold">execution.</span>
+              Where strategy meets <span className="italic text-teal">execution.</span>
             </h2>
-            <p className="font-inter text-lg text-brown/60 max-w-2xl mx-auto leading-relaxed mb-12">
+            <p className="font-inter text-lg text-charcoal/60 max-w-2xl mx-auto leading-relaxed mb-12">
               Most coaches can&apos;t build. Most developers can&apos;t
               strategize. Most marketers can&apos;t do either. I do all three —
               which means your system isn&apos;t just built, it&apos;s built
@@ -148,14 +148,14 @@ export default function About() {
       </section>
 
       {/* Connect */}
-      <section className="section-padding bg-section-dark text-ivory">
+      <section className="section-padding bg-section-dark text-cream">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="label-caps text-gold/80 mb-4">Let&apos;s Connect</p>
-            <h2 className="font-playfair font-bold text-3xl md:text-5xl text-ivory mb-6">
+            <p className="label-caps text-teal/80 mb-4">Let&apos;s Connect</p>
+            <h2 className="font-playfair font-bold text-3xl md:text-5xl text-cream mb-6">
               Follow the journey.
             </h2>
-            <p className="font-inter text-lg text-ivory/50 max-w-xl mx-auto mb-8">
+            <p className="font-inter text-lg text-cream/50 max-w-xl mx-auto mb-8">
               I share insights on longevity, business systems, and building a
               life on your terms.
             </p>
@@ -164,13 +164,13 @@ export default function About() {
                 href="https://www.instagram.com/lola.longevity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gold text-brown font-inter font-semibold px-8 py-4 rounded-full hover:bg-ivory transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-teal text-charcoal font-inter font-semibold px-8 py-4 rounded-full hover:bg-cream transition-all duration-300"
               >
                 @lola.longevity on Instagram →
               </a>
               <Link
                 href="/book"
-                className="inline-flex items-center justify-center gap-2 border border-ivory/30 text-ivory font-inter font-medium px-8 py-4 rounded-full hover:bg-ivory/10 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 border border-cream/30 text-cream font-inter font-medium px-8 py-4 rounded-full hover:bg-cream/10 transition-all duration-300"
               >
                 Book a Call
               </Link>

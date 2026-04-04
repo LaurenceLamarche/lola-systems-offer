@@ -14,11 +14,11 @@ export default function Home() {
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-6">
               Build your first real<br />
-              <span className="text-gold italic">business system.</span>
+              <span className="text-teal italic">business system.</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={200}>
-            <p className="font-inter text-lg md:text-xl text-brown/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
               Foundation OS gives you everything you need to start signing clients
               — funnel, payments, booking, and automation — built for you or with you.
             </p>
@@ -43,7 +43,7 @@ export default function Home() {
           <AnimatedSection>
             <p className="label-caps mb-4">The Problem</p>
             <h2 className="heading-display text-3xl md:text-5xl mb-8">
-              Right now, your business<br />is <span className="italic text-rose">fragmented.</span>
+              Right now, your business<br />is <span className="italic text-sage">fragmented.</span>
             </h2>
           </AnimatedSection>
           <div className="grid md:grid-cols-2 gap-6 mb-10">
@@ -56,17 +56,17 @@ export default function Home() {
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="card-base p-6">
                   <p className="font-inter text-base">
-                    <span className="font-semibold text-brown">{item.pain}</span>
-                    <span className="text-brown/50">… {item.gap}</span>
+                    <span className="font-semibold text-charcoal">{item.pain}</span>
+                    <span className="text-charcoal/50">… {item.gap}</span>
                   </p>
                 </div>
               </AnimatedSection>
             ))}
           </div>
           <AnimatedSection>
-            <p className="font-playfair text-2xl md:text-3xl text-center italic text-brown/80">
+            <p className="font-playfair text-2xl md:text-3xl text-center italic text-charcoal/80">
               You don&apos;t need more effort.<br />
-              <span className="text-gold">You need a system.</span>
+              <span className="text-teal">You need a system.</span>
             </p>
           </AnimatedSection>
         </div>
@@ -80,7 +80,7 @@ export default function Home() {
             <h2 className="heading-display text-3xl md:text-5xl text-center mb-6">
               Foundation OS
             </h2>
-            <p className="font-inter text-lg text-brown/60 text-center max-w-2xl mx-auto mb-16">
+            <p className="font-inter text-lg text-charcoal/60 text-center max-w-2xl mx-auto mb-16">
               Your complete business infrastructure — from first lead to first client.
             </p>
           </AnimatedSection>
@@ -91,13 +91,13 @@ export default function Home() {
               {['Lead', 'Funnel', 'Payment', 'Booking', 'Client'].map(
                 (step, i) => (
                   <div key={step} className="flex items-center gap-2 md:gap-2">
-                    <div className="bg-white border-2 border-gold/40 rounded-2xl px-6 py-4 text-center hover-lift">
-                      <p className="font-playfair text-lg font-semibold text-brown">
+                    <div className="bg-white border-2 border-teal/40 rounded-2xl px-6 py-4 text-center hover-lift">
+                      <p className="font-playfair text-lg font-semibold text-charcoal">
                         {step}
                       </p>
                     </div>
                     {i < 4 && (
-                      <span className="text-gold text-2xl hidden md:block">→</span>
+                      <span className="text-teal text-2xl hidden md:block">→</span>
                     )}
                   </div>
                 )
@@ -145,7 +145,7 @@ export default function Home() {
                   <h3 className="font-playfair text-lg font-semibold mb-2">
                     {item.title}
                   </h3>
-                  <p className="font-inter text-sm text-brown/60 leading-relaxed">
+                  <p className="font-inter text-sm text-charcoal/60 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -156,26 +156,26 @@ export default function Home() {
       </section>
 
       {/* Two Tiers */}
-      <section className="section-padding bg-section-dark text-ivory">
+      <section className="section-padding bg-section-dark text-cream">
         <div className="container-wide">
           <AnimatedSection>
             <p className="label-caps text-center mb-4">Your Journey</p>
-            <h2 className="font-playfair font-bold text-3xl md:text-5xl text-center text-ivory mb-4">
-              Two levels. <span className="italic text-gold">One transformation.</span>
+            <h2 className="font-playfair font-bold text-3xl md:text-5xl text-center text-cream mb-4">
+              Two levels. <span className="italic text-teal">One transformation.</span>
             </h2>
-            <p className="font-inter text-lg text-ivory/50 text-center max-w-2xl mx-auto mb-16">
+            <p className="font-inter text-lg text-cream/50 text-center max-w-2xl mx-auto mb-16">
               Start where you are. Scale when you&apos;re ready.
             </p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-8">
             <AnimatedSection>
-              <div className="border border-ivory/10 rounded-2xl p-8 md:p-10 hover:border-gold/40 transition-all duration-300 h-full">
-                <p className="label-caps text-gold/80 mb-4">Level 1</p>
-                <h3 className="font-playfair text-3xl font-bold text-ivory mb-4">
+              <div className="border border-cream/10 rounded-2xl p-8 md:p-10 hover:border-teal/40 transition-all duration-300 h-full">
+                <p className="label-caps text-teal/80 mb-4">Level 1</p>
+                <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
                   Activation
                 </h3>
-                <p className="font-inter text-ivory/50 mb-6 leading-relaxed">
+                <p className="font-inter text-cream/50 mb-6 leading-relaxed">
                   Build your first system. Get your infrastructure live and start
                   accepting clients.
                 </p>
@@ -190,16 +190,16 @@ export default function Home() {
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="font-inter text-sm text-ivory/70 flex items-center gap-3"
+                      className="font-inter text-sm text-cream/70 flex items-center gap-3"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-teal flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/foundation-os"
-                  className="btn-ghost text-gold hover:text-ivory"
+                  className="btn-ghost text-teal hover:text-cream"
                 >
                   Learn more →
                 </Link>
@@ -207,12 +207,12 @@ export default function Home() {
             </AnimatedSection>
 
             <AnimatedSection delay={150}>
-              <div className="border border-gold/30 rounded-2xl p-8 md:p-10 bg-gold/5 hover:border-gold/60 transition-all duration-300 h-full">
-                <p className="label-caps text-gold mb-4">Level 2</p>
-                <h3 className="font-playfair text-3xl font-bold text-ivory mb-4">
+              <div className="border border-teal/30 rounded-2xl p-8 md:p-10 bg-teal/5 hover:border-teal/60 transition-all duration-300 h-full">
+                <p className="label-caps text-teal mb-4">Level 2</p>
+                <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
                   Ascension
                 </h3>
-                <p className="font-inter text-ivory/50 mb-6 leading-relaxed">
+                <p className="font-inter text-cream/50 mb-6 leading-relaxed">
                   Turn your business into a machine that runs, scales, and
                   converts — with AI and advanced automation.
                 </p>
@@ -227,16 +227,16 @@ export default function Home() {
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="font-inter text-sm text-ivory/70 flex items-center gap-3"
+                      className="font-inter text-sm text-cream/70 flex items-center gap-3"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-teal flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/ascension"
-                  className="btn-ghost text-gold hover:text-ivory"
+                  className="btn-ghost text-teal hover:text-cream"
                 >
                   Learn more →
                 </Link>
@@ -273,14 +273,14 @@ export default function Home() {
             ].map((t, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="card-base p-8">
-                  <p className="font-playfair italic text-lg text-brown/80 mb-6 leading-relaxed">
+                  <p className="font-playfair italic text-lg text-charcoal/80 mb-6 leading-relaxed">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div>
-                    <p className="font-inter text-sm font-semibold text-brown">
+                    <p className="font-inter text-sm font-semibold text-charcoal">
                       {t.name}
                     </p>
-                    <p className="font-inter text-xs text-brown/50">{t.role}</p>
+                    <p className="font-inter text-xs text-charcoal/50">{t.role}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -295,9 +295,9 @@ export default function Home() {
           <AnimatedSection>
             <h2 className="heading-display text-3xl md:text-5xl mb-6">
               Stop guessing.<br />
-              <span className="italic text-gold">Start building.</span>
+              <span className="italic text-teal">Start building.</span>
             </h2>
-            <p className="font-inter text-lg text-brown/60 max-w-xl mx-auto mb-10">
+            <p className="font-inter text-lg text-charcoal/60 max-w-xl mx-auto mb-10">
               Your business doesn&apos;t need another course. It needs a system.
               Let&apos;s build yours.
             </p>

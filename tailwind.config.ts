@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ivory: '#F6F1EB',
-        clay: '#D8CFC4',
-        rose: '#C6A9A3',
-        brown: '#3E332F',
-        gold: '#C9A46A',
-        'brown-light': '#6B5650',
+        // Aligned Systems Brand Colors
+        teal: '#1B7F8C',
+        charcoal: '#2C2C2C',
+        cream: '#F9F7F4',
+        sage: '#8BA888',
+        sand: '#D4B896',
+        'charcoal-light': '#4A4A4A',
       },
       fontFamily: {
         playfair: ['var(--font-playfair)', 'Georgia', 'serif'],

@@ -18,11 +18,11 @@ export default function Book() {
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-5xl mb-6">
-              Book your <span className="italic text-gold">Foundation Call.</span>
+              Book your <span className="italic text-teal">Foundation Call.</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={200}>
-            <p className="font-inter text-lg text-brown/70 max-w-xl mx-auto leading-relaxed">
+            <p className="font-inter text-lg text-charcoal/70 max-w-xl mx-auto leading-relaxed">
               30 minutes. No pressure. We&apos;ll map out where you are, what
               you need, and whether Foundation OS (or Ascension) is the right
               fit.
@@ -35,17 +35,17 @@ export default function Book() {
       <section className="pb-12">
         <div className="container-narrow">
           <AnimatedSection>
-            <div className="bg-white rounded-2xl border border-clay/50 shadow-sm overflow-hidden">
+            <div className="bg-white rounded-2xl border border-sage/50 shadow-sm overflow-hidden">
               {/* Replace this div with your Calendly embed */}
-              <div className="aspect-[4/3] md:aspect-[16/10] flex items-center justify-center bg-clay/10">
+              <div className="aspect-[4/3] md:aspect-[16/10] flex items-center justify-center bg-sage/10">
                 <div className="text-center p-8">
-                  <p className="font-inter text-brown/40 mb-4">
+                  <p className="font-inter text-charcoal/40 mb-4">
                     [ Calendly embed goes here ]
                   </p>
-                  <p className="font-inter text-sm text-brown/30 max-w-md">
+                  <p className="font-inter text-sm text-charcoal/30 max-w-md">
                     Replace this placeholder with your Calendly inline embed.
                     Add this to your code:{' '}
-                    <code className="bg-brown/5 px-2 py-1 rounded text-xs">
+                    <code className="bg-charcoal/5 px-2 py-1 rounded text-xs">
                       {'<InlineWidget url="https://calendly.com/your-link" />'}
                     </code>
                   </p>
@@ -86,14 +86,14 @@ export default function Book() {
             ].map((step, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="flex gap-6 items-start">
-                  <span className="font-playfair text-3xl font-bold text-gold/30 flex-shrink-0">
+                  <span className="font-playfair text-3xl font-bold text-teal/30 flex-shrink-0">
                     {step.num}
                   </span>
                   <div>
                     <h3 className="font-playfair text-lg font-semibold mb-2">
                       {step.title}
                     </h3>
-                    <p className="font-inter text-brown/60 leading-relaxed">
+                    <p className="font-inter text-charcoal/60 leading-relaxed">
                       {step.desc}
                     </p>
                   </div>
@@ -108,11 +108,11 @@ export default function Book() {
       <section className="section-padding">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="font-playfair italic text-2xl md:text-3xl text-brown/80 leading-relaxed max-w-2xl mx-auto">
+            <p className="font-playfair italic text-2xl md:text-3xl text-charcoal/80 leading-relaxed max-w-2xl mx-auto">
               &ldquo;This isn&apos;t a sales call. It&apos;s a strategy session.
               You&apos;ll leave with clarity whether we work together or not.&rdquo;
             </p>
-            <p className="font-inter text-sm text-brown/40 mt-6">— Lola</p>
+            <p className="font-inter text-sm text-charcoal/40 mt-6">— Lola</p>
           </AnimatedSection>
         </div>
       </section>
