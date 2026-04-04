@@ -143,7 +143,7 @@ export default function RevenueSystemPage() {
                 phase: 'Phase 1',
                 title: 'Discovery & Strategy',
                 subtitle: 'Week 1',
-                desc: '90-min intake call (business audit), current state assessment (what's manual, what's broken, what's missing), client journey mapping (from lead → booking → client), and systems blueprint document.',
+                desc: "90-min intake call (business audit), current state assessment (what's manual, what's broken, what's missing), client journey mapping (from lead → booking → client), and systems blueprint document.",
               },
               {
                 icon: '⚙️',
