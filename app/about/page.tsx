@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
+import { BrainIcon, SparklesIcon, ZapIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -130,15 +131,17 @@ export default function About() {
           <AnimatedSection delay={100}>
             <div className="grid grid-cols-3 gap-4">
               {[
-                { label: 'Strategy', icon: '🧠' },
-                { label: 'Design', icon: '✨' },
-                { label: 'Technology', icon: '⚡' },
+                { label: 'Strategy', Icon: BrainIcon },
+                { label: 'Design', Icon: SparklesIcon },
+                { label: 'Technology', Icon: ZapIcon },
               ].map((skill, i) => (
                 <div
                   key={i}
                   className="card-base p-6 text-center hover-lift"
                 >
-                  <span className="text-3xl mb-3 block">{skill.icon}</span>
+                  <div className="flex justify-center mb-3">
+                    <skill.Icon className="w-8 h-8 text-teal" />
+                  </div>
                   <p className="font-inter text-sm font-medium">{skill.label}</p>
                 </div>
               ))}
@@ -161,16 +164,16 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.instagram.com/lola.longevity"
+                href="https://www.instagram.com/lola.systems"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-teal text-charcoal font-inter font-semibold px-8 py-4 rounded-full hover:bg-cream transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-teal text-charcoal font-inter font-semibold px-8 py-4 rounded-[10px] hover:bg-cream transition-all duration-300"
               >
-                @lola.longevity on Instagram →
+                @lola.systems on Instagram →
               </a>
               <Link
                 href="/book"
-                className="inline-flex items-center justify-center gap-2 border border-cream/30 text-cream font-inter font-medium px-8 py-4 rounded-full hover:bg-cream/10 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 border border-cream/30 text-cream font-inter font-medium px-8 py-4 rounded-[10px] hover:bg-cream/10 transition-all duration-300"
               >
                 Book a Call
               </Link>

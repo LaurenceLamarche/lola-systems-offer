@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
+import { SearchIcon, SettingsIcon, RocketIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: '60-Day Revenue System',
@@ -139,21 +140,21 @@ export default function RevenueSystemPage() {
           <div className="space-y-12">
             {[
               {
-                icon: '🔍',
+                Icon: SearchIcon,
                 phase: 'Phase 1',
                 title: 'Discovery & Strategy',
                 subtitle: 'Week 1',
                 desc: "90-min intake call (business audit), current state assessment (what's manual, what's broken, what's missing), client journey mapping (from lead → booking → client), and systems blueprint document.",
               },
               {
-                icon: '⚙️',
+                Icon: SettingsIcon,
                 phase: 'Phase 2',
                 title: 'System Build',
                 subtitle: 'Weeks 2-4',
                 desc: 'We build the core revenue engine in GoHighLevel. Lead capture, follow-up sequences, booking system, CRM organization, and optional add-ons. Weekly 60-min check-ins to keep you in the loop.',
               },
               {
-                icon: '🚀',
+                Icon: RocketIcon,
                 phase: 'Phase 3',
                 title: 'Launch & Handoff',
                 subtitle: 'Weeks 5-6',
@@ -162,8 +163,8 @@ export default function RevenueSystemPage() {
             ].map((step, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="flex gap-6 md:gap-10 items-start">
-                  <div className="flex-shrink-0 w-16 h-16 bg-teal/10 rounded-2xl flex items-center justify-center text-2xl">
-                    {step.icon}
+                  <div className="flex-shrink-0 w-16 h-16 bg-teal/10 rounded-2xl flex items-center justify-center">
+                    <step.Icon className="w-8 h-8 text-teal" />
                   </div>
                   <div>
                     <p className="label-caps text-teal mb-2">{step.phase} · {step.subtitle}</p>

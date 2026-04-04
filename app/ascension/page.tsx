@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
+import { SearchIcon, SettingsIcon, BotIcon, ChartIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'Ascension',
@@ -79,7 +80,7 @@ export default function Ascension() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '🔍',
+                Icon: SearchIcon,
                 title: 'Full Business Audit',
                 items: [
                   'Offer analysis & positioning',
@@ -89,7 +90,7 @@ export default function Ascension() {
                 ],
               },
               {
-                icon: '⚙️',
+                Icon: SettingsIcon,
                 title: 'Systems Build',
                 items: [
                   'Advanced GHL workflows',
@@ -99,7 +100,7 @@ export default function Ascension() {
                 ],
               },
               {
-                icon: '🤖',
+                Icon: BotIcon,
                 title: 'AI Integration',
                 items: [
                   'AI-powered check-ins',
@@ -109,7 +110,7 @@ export default function Ascension() {
                 ],
               },
               {
-                icon: '📊',
+                Icon: ChartIcon,
                 title: 'Optimization Layer',
                 items: [
                   'Conversion tracking',
@@ -121,7 +122,9 @@ export default function Ascension() {
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="card-base p-8 h-full hover-lift">
-                  <span className="text-3xl mb-4 block">{item.icon}</span>
+                  <div className="mb-4">
+                    <item.Icon className="w-8 h-8 text-teal" />
+                  </div>
                   <h3 className="font-playfair text-xl font-semibold mb-4">
                     {item.title}
                   </h3>

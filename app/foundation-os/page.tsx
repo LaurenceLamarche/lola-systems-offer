@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
+import { SearchIcon, TargetIcon, SettingsIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'Foundation OS',
@@ -121,19 +122,19 @@ export default function FoundationOS() {
           <div className="space-y-12">
             {[
               {
-                icon: '🔍',
+                Icon: SearchIcon,
                 phase: 'Phase 1',
                 title: 'Assess',
                 desc: 'We audit your business and offer. Deep-dive call to understand where you are, what you have, and what needs to happen. Information gathering — logos, testimonials, product details.',
               },
               {
-                icon: '🎯',
+                Icon: TargetIcon,
                 phase: 'Phase 2',
                 title: 'Align',
                 desc: 'We structure your system for conversion. First draft presented, feedback incorporated, revisions made. System integrations connected — Stripe, calendar, automations.',
               },
               {
-                icon: '⚙️',
+                Icon: SettingsIcon,
                 phase: 'Phase 3',
                 title: 'Activate',
                 desc: 'Your system goes live. Funnel tested, payments verified, booking confirmed. You&apos;re ready to receive leads and sign clients.',
@@ -141,8 +142,8 @@ export default function FoundationOS() {
             ].map((step, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="flex gap-6 md:gap-10 items-start">
-                  <div className="flex-shrink-0 w-16 h-16 bg-teal/10 rounded-2xl flex items-center justify-center text-2xl">
-                    {step.icon}
+                  <div className="flex-shrink-0 w-16 h-16 bg-teal/10 rounded-2xl flex items-center justify-center">
+                    <step.Icon className="w-8 h-8 text-teal" />
                   </div>
                   <div>
                     <p className="label-caps text-teal mb-2">{step.phase}</p>
@@ -332,7 +333,7 @@ export default function FoundationOS() {
               },
               {
                 q: 'What happens after Foundation OS?',
-                a: 'Once your system is live and generating results, you can level up to Ascension — where we add advanced automation, AI integration, and scale your operations.',
+                a: 'Once your system is live and generating results, you can level up to the 60-Day Revenue System — where we build your complete client acquisition engine with advanced CRM, automations, and follow-up systems.',
               },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 60}>

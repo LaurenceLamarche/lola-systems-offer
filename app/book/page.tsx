@@ -24,7 +24,7 @@ export default function Book() {
           <AnimatedSection delay={200}>
             <p className="font-inter text-lg text-charcoal/70 max-w-xl mx-auto leading-relaxed">
               30 minutes. No pressure. We&apos;ll map out where you are, what
-              you need, and whether Foundation OS (or Ascension) is the right
+              you need, and whether Foundation OS or the 60-Day Revenue System is the right
               fit.
             </p>
           </AnimatedSection>
@@ -76,7 +76,7 @@ export default function Book() {
               {
                 num: '02',
                 title: 'Mapping',
-                desc: 'I\'ll map out what your system needs to look like — the funnel flow, the automations, the key pieces.',
+                desc: 'We\'ll map out what your system needs to look like — the funnel flow, the automations, the key pieces.',
               },
               {
                 num: '03',
