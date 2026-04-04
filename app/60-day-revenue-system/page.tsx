@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'We build the system that gets you clients consistently — without you doing everything manually. Done-with-you in 4-6 weeks.',
 }
 
-export default function SixtyDayRevenueSystem() {
+export default function RevenueSystemPage() {
   return (
     <>
       {/* Hero */}
