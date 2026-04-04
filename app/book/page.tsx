@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export const metadata: Metadata = {
@@ -31,25 +32,23 @@ export default function Book() {
         </div>
       </section>
 
-      {/* Calendly Embed Placeholder */}
+      {/* Booking Embed */}
       <section className="pb-12">
         <div className="container-narrow">
           <AnimatedSection>
             <div className="bg-white rounded-2xl border border-sage/50 shadow-sm overflow-hidden">
-              {/* Replace this div with your Calendly embed */}
-              <div className="aspect-[4/3] md:aspect-[16/10] flex items-center justify-center bg-sage/10">
-                <div className="text-center p-8">
-                  <p className="font-inter text-charcoal/40 mb-4">
-                    [ Calendly embed goes here ]
-                  </p>
-                  <p className="font-inter text-sm text-charcoal/30 max-w-md">
-                    Replace this placeholder with your Calendly inline embed.
-                    Add this to your code:{' '}
-                    <code className="bg-charcoal/5 px-2 py-1 rounded text-xs">
-                      {'<InlineWidget url="https://calendly.com/your-link" />'}
-                    </code>
-                  </p>
-                </div>
+              <div className="p-4 md:p-8">
+                <iframe 
+                  src="https://api.physicalsystems.ca/widget/booking/XjnVHjju2VBnb60JCyUC" 
+                  style={{ width: '100%', border: 'none', minHeight: '600px' }} 
+                  scrolling="no" 
+                  id="XjnVHjju2VBnb60JCyUC_1775328356756"
+                  title="Book Your Call"
+                />
+                <Script 
+                  src="https://api.physicalsystems.ca/js/form_embed.js" 
+                  strategy="lazyOnload"
+                />
               </div>
             </div>
           </AnimatedSection>
