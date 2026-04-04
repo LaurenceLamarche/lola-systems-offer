@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <div className="mt-6">
               <a
-                href="https://www.instagram.com/lola.longevity"
+                href="https://www.instagram.com/lola.systems"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-inter text-sage hover:text-teal transition-colors duration-200 group"
@@ -46,7 +46,7 @@ export default function Footer() {
                     clipRule="evenodd"
                   />
                 </svg>
-                @lola.longevity
+                @lola.systems
                 <span className="group-hover:translate-x-0.5 transition-transform duration-200">
                   →
                 </span>

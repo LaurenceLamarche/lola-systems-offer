@@ -9,28 +9,27 @@ export default function Home() {
         <div className="absolute inset-0 bg-grain opacity-30" />
         <div className="container-narrow text-center relative z-10 pt-24 pb-20">
           <AnimatedSection>
-            <p className="label-caps mb-6">Systems Architect</p>
+            <p className="label-caps mb-6">Turn Chaos Into Clients</p>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-6">
-              Build your first real<br />
-              <span className="text-teal italic">business system.</span>
+              Stop doing everything manually.<br />
+              <span className="text-teal italic">Start booking clients consistently.</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Foundation OS gives you everything you need to start signing clients
-              — funnel, payments, booking, and automation — built for you or with you.
+              We build the system that gets you clients consistently — without you doing everything manually. Done-with-you in 4-6 weeks.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={300}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book" className="btn-primary">
-                Book Your Foundation Call
+                Book Your Strategy Call
                 <span>→</span>
               </Link>
-              <Link href="/foundation-os" className="btn-secondary">
-                Explore Foundation OS
+              <Link href="/revenue-system" className="btn-secondary">
+                Explore the 60-Day System
               </Link>
             </div>
           </AnimatedSection>
@@ -72,88 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solution Overview */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <AnimatedSection>
-            <p className="label-caps text-center mb-4">The Solution</p>
-            <h2 className="heading-display text-3xl md:text-5xl text-center mb-6">
-              Foundation OS
-            </h2>
-            <p className="font-inter text-lg text-charcoal/60 text-center max-w-2xl mx-auto mb-16">
-              Your complete business infrastructure — from first lead to first client.
-            </p>
-          </AnimatedSection>
 
-          {/* Visual Flow */}
-          <AnimatedSection>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2 mb-20">
-              {['Lead', 'Funnel', 'Payment', 'Booking', 'Client'].map(
-                (step, i) => (
-                  <div key={step} className="flex items-center gap-2 md:gap-2">
-                    <div className="bg-white border-2 border-teal/40 rounded-2xl px-6 py-4 text-center hover-lift">
-                      <p className="font-playfair text-lg font-semibold text-charcoal">
-                        {step}
-                      </p>
-                    </div>
-                    {i < 4 && (
-                      <span className="text-teal text-2xl hidden md:block">→</span>
-                    )}
-                  </div>
-                )
-              )}
-            </div>
-          </AnimatedSection>
-
-          {/* Deliverables Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: '🎯',
-                title: 'Offer Structuring',
-                desc: 'Clarify your offer, define pricing, and position for conversion.',
-              },
-              {
-                icon: '🔗',
-                title: 'Funnel System',
-                desc: 'Landing page, offer page, and thank-you page — built to convert.',
-              },
-              {
-                icon: '💰',
-                title: 'Monetization Setup',
-                desc: 'Stripe integration and product or service setup — ready to collect.',
-              },
-              {
-                icon: '📅',
-                title: 'Booking System',
-                desc: 'Calendar, automated confirmations, reminders, and rescheduling.',
-              },
-              {
-                icon: '⚡',
-                title: 'Smart Automations',
-                desc: 'Email confirmations, lead capture, reminder sequences, and delivery.',
-              },
-              {
-                icon: '🚀',
-                title: 'Launch Ready',
-                desc: 'Built and launched in 7–14 days. Start signing clients immediately.',
-              },
-            ].map((item, i) => (
-              <AnimatedSection key={i} delay={i * 80}>
-                <div className="card-base hover-lift h-full">
-                  <span className="text-3xl mb-4 block">{item.icon}</span>
-                  <h3 className="font-playfair text-lg font-semibold mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="font-inter text-sm text-charcoal/60 leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Two Tiers */}
       <section className="section-padding bg-section-dark text-cream">
@@ -161,7 +79,7 @@ export default function Home() {
           <AnimatedSection>
             <p className="label-caps text-center mb-4">Your Journey</p>
             <h2 className="font-playfair font-bold text-3xl md:text-5xl text-center text-cream mb-4">
-              Two levels. <span className="italic text-teal">One transformation.</span>
+              Two tiers, one goal: <span className="italic text-teal">help you scale.</span>
             </h2>
             <p className="font-inter text-lg text-cream/50 text-center max-w-2xl mx-auto mb-16">
               Start where you are. Scale when you&apos;re ready.
@@ -173,7 +91,7 @@ export default function Home() {
               <div className="border border-cream/10 rounded-2xl p-8 md:p-10 hover:border-teal/40 transition-all duration-300 h-full">
                 <p className="label-caps text-teal/80 mb-4">Level 1</p>
                 <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
-                  Activation
+                  Foundation OS
                 </h3>
                 <p className="font-inter text-cream/50 mb-6 leading-relaxed">
                   Build your first system. Get your infrastructure live and start
@@ -210,20 +128,19 @@ export default function Home() {
               <div className="border border-teal/30 rounded-2xl p-8 md:p-10 bg-teal/5 hover:border-teal/60 transition-all duration-300 h-full">
                 <p className="label-caps text-teal mb-4">Level 2</p>
                 <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
-                  Ascension
+                  The 60-Day Revenue System
                 </h3>
                 <p className="font-inter text-cream/50 mb-6 leading-relaxed">
-                  Turn your business into a machine that runs, scales, and
-                  converts — with AI and advanced automation.
+                  We build the system that gets you clients consistently — without you doing everything manually.
                 </p>
                 <hr className="gold-rule mb-6" />
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Full business audit',
-                    'Advanced GHL workflows & CRM',
-                    'AI integration & auto responses',
-                    'Conversion tracking & KPIs',
-                    'Monthly optimization',
+                    'Lead capture & follow-up system',
+                    'Booking system with reminders',
+                    'CRM organization & pipelines',
+                    'Email & SMS automation',
+                    '4-6 week done-with-you build',
                   ].map((item, i) => (
                     <li
                       key={i}
@@ -235,7 +152,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <Link
-                  href="/ascension"
+                  href="/revenue-system"
                   className="btn-ghost text-teal hover:text-cream"
                 >
                   Learn more →
