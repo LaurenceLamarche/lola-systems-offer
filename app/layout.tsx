@@ -22,11 +22,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://lolasystems.com'),
   title: {
-    default: 'Foundation OS — Lola | Systems Architect',
+    default: 'Foundation OS | Lola | Systems Architect',
     template: '%s | Foundation OS by Lola',
   },
   description:
-    'Build your first real business system. Foundation OS gives you everything you need to start signing clients — funnel, payments, booking, and automation — built for you or with you.',
+    'Build your first real business system. Foundation OS gives you everything you need to start signing clients. Funnel, payments, booking, and automation. Built for you or with you.',
   keywords: [
     'business systems',
     'foundation OS',
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://lolasystems.com',
     siteName: 'Foundation OS by Lola',
-    title: 'Foundation OS — Build Your First Real Business System',
+    title: 'Foundation OS | Build Your First Real Business System',
     description:
-      'Foundation OS gives you everything you need to start signing clients — funnel, payments, booking, and automation — built for you or with you.',
+      'Foundation OS gives you everything you need to start signing clients. Funnel, payments, booking, and automation. Built for you or with you.',
     images: [
       {
         url: '/og-image.jpg',
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Foundation OS — Build Your First Real Business System',
+    title: 'Foundation OS | Build Your First Real Business System',
     description:
-      'Foundation OS gives you everything you need to start signing clients — funnel, payments, booking, and automation — built for you or with you.',
+      'Foundation OS gives you everything you need to start signing clients. Funnel, payments, booking, and automation. Built for you or with you.',
     images: ['/og-image.jpg'],
   },
   robots: {

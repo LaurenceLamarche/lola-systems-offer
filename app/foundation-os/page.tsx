@@ -6,7 +6,7 @@ import { SearchIcon, TargetIcon, SettingsIcon } from '@/components/Icons'
 export const metadata: Metadata = {
   title: 'Foundation OS',
   description:
-    'Your first revenue system — built to convert. Offer structuring, funnel, payments, booking, and automation in 7–14 days.',
+    'Your first revenue system. Built to convert. Offer structuring, funnel, payments, booking, and automation in 7–14 days.',
 }
 
 export default function FoundationOS() {
@@ -16,7 +16,7 @@ export default function FoundationOS() {
       <section className="pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="label-caps mb-4">Level 1 — Activation</p>
+            <p className="label-caps mb-4">Level 1: Activation</p>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-6xl mb-6">
@@ -25,7 +25,7 @@ export default function FoundationOS() {
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Your first revenue system — built to convert. Everything you need
+              Your first revenue system. Built to convert. Everything you need
               to go from scattered ideas to signed clients.
             </p>
           </AnimatedSection>
@@ -52,18 +52,18 @@ export default function FoundationOS() {
               {
                 num: '01',
                 title: 'Offer Structuring',
-                desc: 'This is where the magic starts. We clarify your offer, define your pricing, and position it for maximum conversion. Most entrepreneurs skip this — and it costs them everything.',
+                desc: 'This is where the magic starts. We clarify your offer, define your pricing, and position it for maximum conversion. Most entrepreneurs skip this. And it costs them everything.',
                 highlight: true,
               },
               {
                 num: '02',
                 title: 'Funnel System',
-                desc: 'One complete conversion funnel: landing page, offer or booking page, and thank-you page. Clean, professional, built to convert — not just look pretty.',
+                desc: 'One complete conversion funnel: landing page, offer or booking page, and thank-you page. Clean, professional, built to convert. Not just look pretty.',
               },
               {
                 num: '03',
                 title: 'Monetization Setup',
-                desc: 'Stripe integration with your product or service configured and ready. Accept payments from day one — no more "DM me for details."',
+                desc: 'Stripe integration with your product or service configured and ready. Accept payments from day one. No more "DM me for details."',
               },
               {
                 num: '04',
@@ -73,7 +73,7 @@ export default function FoundationOS() {
               {
                 num: '05',
                 title: 'Smart Automations',
-                desc: 'Email confirmations, lead capture, reminder sequences, and product/service delivery — all running while you sleep.',
+                desc: 'Email confirmations, lead capture, reminder sequences, and product/service delivery. All running while you sleep.',
               },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 80}>
@@ -125,13 +125,13 @@ export default function FoundationOS() {
                 Icon: SearchIcon,
                 phase: 'Phase 1',
                 title: 'Assess',
-                desc: 'We audit your business and offer. Deep-dive call to understand where you are, what you have, and what needs to happen. Information gathering — logos, testimonials, product details.',
+                desc: 'We audit your business and offer. Deep-dive call to understand where you are, what you have, and what needs to happen. Information gathering: logos, testimonials, product details.',
               },
               {
                 Icon: TargetIcon,
                 phase: 'Phase 2',
                 title: 'Align',
-                desc: 'We structure your system for conversion. First draft presented, feedback incorporated, revisions made. System integrations connected — Stripe, calendar, automations.',
+                desc: 'We structure your system for conversion. First draft presented, feedback incorporated, revisions made. System integrations connected: Stripe, calendar, automations.',
               },
               {
                 Icon: SettingsIcon,
@@ -317,11 +317,11 @@ export default function FoundationOS() {
             {[
               {
                 q: 'What if I don\'t have my offer figured out yet?',
-                a: 'That\'s exactly what Phase 1 is for. Offer structuring is the first thing we do — we\'ll clarify what you\'re selling, who you\'re selling to, and how to price it before we build anything.',
+                a: 'That\'s exactly what Phase 1 is for. Offer structuring is the first thing we do. We\'ll clarify what you\'re selling, who you\'re selling to, and how to price it before we build anything.',
               },
               {
                 q: 'Do I need technical skills?',
-                a: 'Zero. Whether you choose "Done With You" or "Done For You," we handle all the technical setup. You focus on your zone of genius — we handle the systems.',
+                a: 'Zero. Whether you choose "Done With You" or "Done For You," we handle all the technical setup. You focus on your zone of genius. We handle the systems.',
               },
               {
                 q: 'What platform do you build on?',
@@ -333,7 +333,7 @@ export default function FoundationOS() {
               },
               {
                 q: 'What happens after Foundation OS?',
-                a: 'Once your system is live and generating results, you can level up to the 60-Day Revenue System — where we build your complete client acquisition engine with advanced CRM, automations, and follow-up systems.',
+                a: 'Once your system is live and generating results, you can level up to the 60-Day Revenue System, where we build your complete client acquisition engine with advanced CRM, automations, and follow-up systems.',
               },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 60}>

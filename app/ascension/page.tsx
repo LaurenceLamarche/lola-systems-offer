@@ -6,7 +6,7 @@ import { SearchIcon, SettingsIcon, BotIcon, ChartIcon } from '@/components/Icons
 export const metadata: Metadata = {
   title: 'Ascension',
   description:
-    'Turn your business into a machine. Advanced automation, AI integration, and scale — for businesses ready to grow.',
+    'Turn your business into a machine. Advanced automation, AI integration, and scale. For businesses ready to grow.',
 }
 
 export default function Ascension() {
@@ -17,7 +17,7 @@ export default function Ascension() {
         <div className="absolute inset-0 bg-grain opacity-10" />
         <div className="container-narrow text-center relative z-10">
           <AnimatedSection>
-            <p className="label-caps text-teal mb-4">Level 2 — Scale</p>
+            <p className="label-caps text-teal mb-4">Level 2: Scale</p>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="font-playfair font-bold text-4xl md:text-6xl text-cream mb-6">
@@ -161,7 +161,7 @@ export default function Ascension() {
               {
                 tier: 'Audit Only',
                 price: '$500–$1,500',
-                desc: 'Deep-dive into your business — find the gaps and opportunities.',
+                desc: 'Deep-dive into your business. Find the gaps and opportunities.',
                 features: [
                   'Full business audit',
                   'Revenue leak report',

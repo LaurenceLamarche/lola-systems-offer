@@ -28,19 +28,19 @@ export default function About() {
           <AnimatedSection delay={200}>
             <div className="max-w-2xl">
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
-                We&apos;re Aligned Systems — a team of systems thinkers and builders. We
+                We&apos;re Aligned Systems. A team of systems thinkers and builders. We
                 help people go from scattered ideas to scalable businesses
                 through structured, intelligent systems.
               </p>
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed mb-6">
                 Our background spans health &amp; wellness, longevity, and
                 high-performance coaching. We&apos;ve seen firsthand how the
-                right systems transform not just businesses — but lives.
+                right systems transform not just businesses. But lives.
               </p>
               <p className="font-inter text-lg text-charcoal/70 leading-relaxed">
                 We believe in building with intention. Every funnel, every
                 automation, every system we create is designed to work{' '}
-                <em>for you</em> — so you can focus on what you do best.
+                <em>for you</em>, so you can focus on what you do best.
               </p>
             </div>
           </AnimatedSection>
@@ -74,7 +74,7 @@ export default function About() {
             {[
               {
                 title: 'Clarity Over Complexity',
-                desc: 'Simple systems that actually work beat complicated ones that collect dust. We build what you need — nothing more, nothing less.',
+                desc: 'Simple systems that actually work beat complicated ones that collect dust. We build what you need. Nothing more, nothing less.',
               },
               {
                 title: 'Structure Meets Flow',
@@ -122,8 +122,8 @@ export default function About() {
             </h2>
             <p className="font-inter text-lg text-charcoal/60 max-w-2xl mx-auto leading-relaxed mb-12">
               Most coaches can&apos;t build. Most developers can&apos;t
-              strategize. Most marketers can&apos;t do either. We do all three —
-              which means your system isn&apos;t just built, it&apos;s built
+              strategize. Most marketers can&apos;t do either. We do all three.
+              Which means your system isn&apos;t just built, it&apos;s built
               <em> right</em>.
             </p>
           </AnimatedSection>
