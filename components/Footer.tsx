@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 const footerLinks = [
   { href: '/', label: 'Home' },
+  { href: '/landing-page-offer', label: 'Landing Page' },
   { href: '/foundation-os', label: 'Foundation OS' },
-  { href: '/revenue-system', label: '60-Day System' },
   { href: '/about', label: 'About' },
   { href: '/book', label: 'Book a Call' },
 ]
@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-cream/10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-inter text-xs text-cream/30">
-            © {new Date().getFullYear()} Lola Systems. All rights reserved.
+            © {new Date().getFullYear()} Aligned Systems. All rights reserved.
           </p>
           <p className="font-inter text-xs text-cream/30 text-center max-w-md">
             Results vary. Foundation OS is a business systems service, not a
