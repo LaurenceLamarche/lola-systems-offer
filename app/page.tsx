@@ -19,7 +19,7 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              We build the system that gets you clients consistently — without you doing everything manually. Done-with-you in 4-6 weeks.
+              We build the system that gets you clients consistently. Without you doing everything manually. Done-with-you in 4-6 weeks.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={300}>
@@ -131,7 +131,7 @@ export default function Home() {
                   The 60-Day Revenue System
                 </h3>
                 <p className="font-inter text-cream/50 mb-6 leading-relaxed">
-                  We build the system that gets you clients consistently — without you doing everything manually.
+                  We build the system that gets you clients consistently. Without you doing everything manually.
                 </p>
                 <hr className="gold-rule mb-6" />
                 <ul className="space-y-3 mb-8">
@@ -183,7 +183,7 @@ export default function Home() {
               },
               {
                 quote:
-                  "She didn't just build me a funnel — she restructured my entire offer and now it actually sells.",
+                  "She didn't just build me a funnel. She restructured my entire offer and now it actually sells.",
                 name: 'Client Name',
                 role: 'Online Coach',
               },

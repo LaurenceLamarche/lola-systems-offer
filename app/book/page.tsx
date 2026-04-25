@@ -70,12 +70,12 @@ export default function Book() {
               {
                 num: '01',
                 title: 'Discovery',
-                desc: 'We talk about where you are now — your offer, your audience, your goals. No judgment, just clarity.',
+                desc: 'We talk about where you are now. Your offer, your audience, your goals. No judgment, just clarity.',
               },
               {
                 num: '02',
                 title: 'Mapping',
-                desc: 'We\'ll map out what your system needs to look like — the funnel flow, the automations, the key pieces.',
+                desc: 'We\'ll map out what your system needs to look like. The funnel flow, the automations, the key pieces.',
               },
               {
                 num: '03',
@@ -111,7 +111,7 @@ export default function Book() {
               &ldquo;This isn&apos;t a sales call. It&apos;s a strategy session.
               You&apos;ll leave with clarity whether we work together or not.&rdquo;
             </p>
-            <p className="font-inter text-sm text-charcoal/40 mt-6">— Lola</p>
+            <p className="font-inter text-sm text-charcoal/40 mt-6">Lola</p>
           </AnimatedSection>
         </div>
       </section>

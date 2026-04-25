@@ -6,7 +6,7 @@ import { SearchIcon, SettingsIcon, RocketIcon } from '@/components/Icons'
 export const metadata: Metadata = {
   title: '60-Day Revenue System',
   description:
-    'We build the system that gets you clients consistently — without you doing everything manually. Done-with-you in 4-6 weeks.',
+    'We build the system that gets you clients consistently. Without you doing everything manually. Done-with-you in 4-6 weeks.',
 }
 
 export default function RevenueSystemPage() {
@@ -16,7 +16,7 @@ export default function RevenueSystemPage() {
       <section className="pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container-narrow text-center">
           <AnimatedSection>
-            <p className="label-caps mb-4">Level 2 — Revenue Engine</p>
+            <p className="label-caps mb-4">Level 2: Revenue Engine</p>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <h1 className="heading-display text-4xl md:text-6xl mb-6">
@@ -25,7 +25,7 @@ export default function RevenueSystemPage() {
           </AnimatedSection>
           <AnimatedSection delay={200}>
             <p className="font-inter text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              We build the system that gets you clients consistently — without you doing everything manually.
+              We build the system that gets you clients consistently. Without you doing everything manually.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={300}>
@@ -409,7 +409,7 @@ export default function RevenueSystemPage() {
             {[
               {
                 q: 'Do I need technical skills?',
-                a: 'Zero. We handle all the technical setup. You focus on your zone of genius — we handle the systems.',
+                a: 'Zero. We handle all the technical setup. You focus on your zone of genius. We handle the systems.',
               },
               {
                 q: 'What platform do you build on?',
